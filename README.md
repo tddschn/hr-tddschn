@@ -18,7 +18,9 @@ The good old [hr](https://github.com/LuRsT/hr) in python3.
 Version 0.1 of the original `hr.py` 
 (the current latest version of `hr` on [PyPI](https://pypi.org/project/hr/)) doesn't work with python3,
 
-this project adds python3 support.
+this project adds python3 support and properly configured entry point so that `hr` is added to your `$PATH` after installation.
+
+[Read more](https://github.com/euangoddard/hr.py/issues/3#issuecomment-1100875531)
 
 ## Intro
 
