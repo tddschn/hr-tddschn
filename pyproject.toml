@@ -7,7 +7,7 @@ license = "MIT"
 readme = "README.md"
 
 [tool.poetry.scripts]
-git-pp = "hr:cli"
+hr = "hr:cli"
 
 [tool.poetry.dependencies]
 python = "^3 || ^2.7"
