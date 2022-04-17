@@ -1,7 +1,28 @@
-hr.py
-=====
+# hr-tddschn
 
-Horizontal rule for your terminal - in python!
+Fork of [hr.py](https://github.com/euangoddard/hr.py), with python3 support.
+
+The good old [hr](https://github.com/LuRsT/hr) in python3.
+
+- [hr-tddschn](#hr-tddschn)
+  - [Why fork?](#why-fork)
+  - [Intro](#intro)
+  - [Inspiration](#inspiration)
+  - [Install](#install)
+  - [How to use it?](#how-to-use-it)
+    - [From the command-line:](#from-the-command-line)
+    - [From another python script (it could happen, right?)](#from-another-python-script-it-could-happen-right)
+  - [Requirements](#requirements)
+## Why fork?
+
+Version 0.1 of the original `hr.py` 
+(the current latest version of `hr` on [PyPI](https://pypi.org/project/hr/)) doesn't work with python3,
+
+this project adds python3 support.
+
+## Intro
+
+Horizontal rule for your terminal - in python3!
 
 Tired of not finding things in your terminal because there's a lot of logs and
 garbage? Tired of destroying the Enter key by creating a "void zone" in your
@@ -13,14 +34,18 @@ Use the old `<hr />` tag, but in your terminal.
 
 The original version of the hr script was implement in bash (https://github.com/LuRsT/hr), and I thought, "why not have a python version?". So here we are!
 
-## Setup
+## Install
 
-    $ pip install hr
+```
+$ pip install hr-tddschn
+```
 
-Or if you want the latest version from github:
+Or, if you only want to use it as a CLI app:
+```
+$ pipx install hr-tddschn
+```
 
-    $ pip install git+git://github.com/euangoddard/hr.py.git
-
+Then run it with `hr`.
 
 ## How to use it?
 

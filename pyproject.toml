@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "hr-tddschn"
+version = "0.1.0"
+description = "Horizontal rule for your terminal - in python3!"
+authors = ["Xinyuan Chen <45612704+tddschn@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
