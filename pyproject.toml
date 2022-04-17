@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "hr-tddschn"
-version = "0.1.0"
+version = "0.1.1"
 description = "Horizontal rule for your terminal - in python3!"
 authors = ["Gonçalves", "Euan Goddard", "Xinyuan Chen <45612704+tddschn@users.noreply.github.com>"]
 license = "MIT"
