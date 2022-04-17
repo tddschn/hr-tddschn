@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-__version__ = '0.1.4'
 # -*- coding: utf-8 -*-
 
 # The MIT License (MIT)
@@ -26,6 +25,8 @@ __version__ = '0.1.4'
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 from __future__ import print_function
+
+__version__ = '0.1.4'
 
 import math
 import os
