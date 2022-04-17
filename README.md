@@ -88,4 +88,4 @@ You can also make "beautiful" ASCII patterns
 
 ## Requirements
 
-The only requirement is python (tested in python 2.7 and python 3.4)
+The only requirement is python (tested in python 2.7 and python 3.10)
