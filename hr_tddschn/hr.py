@@ -26,8 +26,6 @@
 # SOFTWARE.
 from __future__ import print_function
 
-__version__ = '0.1.7'
-
 import math
 import os
 import sys
