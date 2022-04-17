@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+__version__ = '0.1.0'
 # -*- coding: utf-8 -*-
 
 # The MIT License (MIT)
