@@ -7,7 +7,7 @@ license = "MIT"
 readme = "README.md"
 
 [tool.poetry.scripts]
-hr = "hr:cli"
+hr = "hr_tddschn.hr:cli"
 
 [tool.poetry.dependencies]
 python = "^3 || ^2.7"
