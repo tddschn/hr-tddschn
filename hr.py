@@ -1,10 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-# The MIT License (MIT)    
+# The MIT License (MIT)
 #
 # Copyright (c) 2013 Gil Gonçalves
 # Copyright (c) 2014-2015 Euan Goddard
+# Copyright (c) 2022 Xinyuan Chen
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -32,9 +33,9 @@ import sys
 
 def hr(*symbols):
     symbols = symbols or ('#', )
-    
+
     cols = _get_terminal_size()[0]
-    
+
     for symbol in symbols:
         repeat_count = int(math.ceil(float(cols) / len(symbol)))
         output = symbol * repeat_count
@@ -48,17 +49,19 @@ def cli():
 
 def _get_terminal_size():
     env = os.environ
+
+    # cSpell:disable
     def ioctl_GWINSZ(fd):
         try:
             import fcntl, termios, struct
             cr = \
-                struct.unpack('hh', fcntl.ioctl(fd, termios.TIOCGWINSZ, '1234'))
+                struct.unpack('hh', fcntl.ioctl(fd, termios.TIOCGWINSZ, '1234')) # type: ignore
         except:
             return
         return cr
-    
+
     cr = ioctl_GWINSZ(0) or ioctl_GWINSZ(1) or ioctl_GWINSZ(2)
-    
+
     if not cr:
         try:
             fd = os.open(os.ctermid(), os.O_RDONLY)
@@ -66,7 +69,8 @@ def _get_terminal_size():
             os.close(fd)
         except:
             pass
-    
+    # cSpell:enable
+
     if not cr:
         cr = (env.get('LINES', 25), env.get('COLUMNS', 80))
 

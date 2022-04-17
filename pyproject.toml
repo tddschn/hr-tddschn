@@ -2,9 +2,12 @@
 name = "hr-tddschn"
 version = "0.1.0"
 description = "Horizontal rule for your terminal - in python3!"
-authors = ["Xinyuan Chen <45612704+tddschn@users.noreply.github.com>"]
+authors = ["Gonçalves", "Euan Goddard", "Xinyuan Chen <45612704+tddschn@users.noreply.github.com>"]
 license = "MIT"
 readme = "README.md"
+
+[tool.poetry.scripts]
+git-pp = "hr."
 
 [tool.poetry.dependencies]
 python = "^3"
