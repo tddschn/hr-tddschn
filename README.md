@@ -72,7 +72,7 @@ You can also make "beautiful" ASCII patterns
 
 ### From another python script (it could happen, right?)
 
-    >>> from hr import hr
+    >>> from hr_tddschn import hr
     >>> hr()
     ################################## # Till the end of your terminal window
     >>> hr('*')
@@ -88,4 +88,4 @@ You can also make "beautiful" ASCII patterns
 
 ## Requirements
 
-The only requirement is python (tested in python 2.7 and python 3.10)
+The only requirement is python2.7+ or python3 (tested in python 3.10)
